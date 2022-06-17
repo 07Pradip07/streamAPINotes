@@ -9,3 +9,15 @@ s.accept("pradip");
 }
 
 }
+
+2.Consumer Chain
+
+Consumer<Student> c1 = (student)->Syetem.out::println(student.getName());
+Consumer<Student> c2 = (student)->Syetem.out::println(student.getActivities());
+
+List<Student> students = studentsData.getall();
+
+for(Student:students){
+	c1.andThen(c2).accept(student);
+
+}
