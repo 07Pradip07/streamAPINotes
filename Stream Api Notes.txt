@@ -1,0 +1,11 @@
+1.Consumer
+	-consumer interface is used to perform some operations on array list and produce result as per our requirement
+eg-
+public class ConsumerExaple{
+
+main(){
+Consumer<String> consumer = (s)->System.out::println(s.toUpperCase);
+s.accept("pradip");
+}
+
+}
